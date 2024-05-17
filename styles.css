@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#beallito {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    padding: 2rem;
+}
+
+.tesztlista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    background-color: lightgray;
+    padding: 0.5rem;
+}
+
+.lista-elem, button {
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.lista-elem {
+    background-color: slateblue;
+    transition: filter 0.1s;
+}
+
+.lista-elem:hover {
+    filter: brightness(125%);
+}
+
+button {
+    background-color: slategray;
+}
